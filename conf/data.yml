@@ -1,0 +1,59 @@
+Assessment(a1):
+  weight: 74
+  chest: 106
+  thigh: 56
+  upperArm: 45
+  waist: 78
+  hips: 98
+  comment: you need to work hard
+  date: 05-05-2020 11:45:54
+
+Assessment(a2):
+  weight: 72
+  chest: 101
+  thigh: 51
+  upperArm: 48
+  waist: 75
+  hips: 95
+  comment: very good improvement
+  date: 05-06-2020 18:53:48
+
+Assessment(a3):
+  weight: 58
+  chest: 87
+  thigh: 45
+  upperArm: 41
+  waist: 68
+  hips: 83
+  comment: keep on working hard
+  date: 18-05-2020 12:20:25
+
+Member(m1):
+  name: Paul Smith
+  gender: M
+  email: paul@smith.com
+  password: secret
+  address: Waterford city
+  height: 1.72
+  startingweight: 74
+  assessments:
+    - a1
+    - a2
+
+Member(m2):
+  name: Mary Wilson
+  gender: F
+  email: mary@wilson.com
+  password: secret
+  address: Wexford
+  height: 1.59
+  startingweight: 59
+  assessments:
+    - a3
+
+Trainer(t1):
+  name: Personal Trainer
+  gender: M
+  email: trainer@gym.com
+  password: secret
+  address: waterford

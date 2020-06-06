@@ -1,0 +1,45 @@
+#{extends 'main.html' /}
+#{set title:'Dashboard' /}
+
+#{menutrainer id:"dashboard"/}
+<section class="ui center aligned middle aligned segment">
+    <div class="ui grid">
+        <div class="four wide column">
+            <h1>
+                <i class="user icon big"></i>
+            </h1>
+
+            <h3>
+                ${member.name}
+            </h3>
+        </div>
+        <div class="four wide column">
+            <h1>
+            #{if isIdealBodyWeight} <i class="thumbs up icon big green"></i> #{/if}
+            #{else} <i class="thumbs down icon big red"></i>            #{/else}
+            </h1>
+            <h3>
+                IDEAL WEIGHT INDICATOR
+            </h3>
+        </div>
+        <div class="four wide column">
+            <h1>
+                <i class="heart outline icon big"></i>${bmi}
+            </h1>
+           <h3>
+               BMI
+           </h3>
+        </div>
+        <div class="four wide column">
+            <h1>
+                <i class="heartbeat icon big"></i>
+            </h1>
+            <h3>
+                ${determineBMICategory}
+            </h3>
+        </div>
+    </div>
+</section>
+#{trainertableassessment member:member /}
+
+
